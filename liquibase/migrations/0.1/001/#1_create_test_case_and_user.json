@@ -1,0 +1,29 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "#1",
+        "author": "почта",
+        "comment": "Создать таблицы User и TestCase со связью 1-М.",
+        "changes": [
+          {
+            "sqlFile": {
+              "stripComments": true,
+              "splitStatements": false,
+              "path": "/migrations/0.1/001/#1_create_test_case_and_user.sql"
+            },
+            "tagDatabase": {
+              "tag": "init"
+            }
+          }
+        ],
+        "rollback": {
+          "sqlFile": {
+            "splitStatements": false,
+            "path": "/migrations/0.1/001/#1_create_test_case_and_user__rollback.sql"
+          }
+        }
+      }
+    }
+  ]
+}
