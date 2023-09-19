@@ -1,14 +1,10 @@
-CREATE SCHEMA load_testing;
+CREATE SCHEMA test_app;
 
-CREATE TABLE load_testing.user
+CREATE TABLE test_app.test_case
 (
-    id VARCHAR(36) PRIMARY KEY
-);
-
-CREATE TABLE load_testing.test_case
-(
-    id VARCHAR(36) PRIMARY KEY,
-    name VARCHAR(30),
-    userid VARCHAR(36),
-    FOREIGN KEY (userid) REFERENCES load_testing.user(id)
+    id UUID PRIMARY KEY,
+    name VARCHAR(255),
+    user_id VARCHAR(36) NOT NULL,
+    test_case_request JSON,
+    FOREIGN KEY (user_id) REFERENCES public.user_entity(id)
 );
