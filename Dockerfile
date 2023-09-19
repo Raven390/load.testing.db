@@ -4,7 +4,7 @@ ENV URL=""
 ENV USERNAME=""
 ENV PASSWORD=""
 ENV COMMAND="update"
-ENV SCHEMA="public"
+ENV SCHEMA="liquibase"
 ENV LOG_LEVEL="info"
 WORKDIR /changelog
 
