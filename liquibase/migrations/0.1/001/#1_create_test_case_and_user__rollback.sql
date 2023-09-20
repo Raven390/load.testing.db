@@ -1,2 +1,1 @@
-DROP TABLE test_app.test_case
-DROP SCHEMA test_app;
+DROP SCHEMA test_app CASCADE;
