@@ -2,7 +2,7 @@
   "databaseChangeLog": [
     {
       "include": {
-        "file": "/migrations/#1_create_test_case_and_user.json"
+        "file": "/migrations/0.1/001/#1_create_test_case_and_user.json"
       }
     }
   ]
